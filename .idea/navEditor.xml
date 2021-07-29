@@ -8,13 +8,13 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
-                  <entry key="navigation_c&#10;        android:name=">
+                  <entry key="navigation_currency">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="12" />
-                            <option name="y" value="12" />
+                            <option name="x" value="18" />
+                            <option name="y" value="718" />
                           </Point>
                         </option>
                       </LayoutPositions>

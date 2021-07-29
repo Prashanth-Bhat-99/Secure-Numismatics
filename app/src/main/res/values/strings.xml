@@ -86,15 +86,9 @@
     <string name="lbl_product_detail_stock_quantity">Year</string>
     <string name="lbl_continent">Continent</string>
     <string name="lbl_country">Country</string>
-    <string name="lbl_number">Year</string>
-    <string name="lbl_year">Year</string>
     <string name="btn_lbl_add_to_cart">ADD TO FAVORITES</string>
     <string name="success_message_item_added_in_cart">Coin was added to favorites.</string>
     <string name="btn_lbl_go_to_cart">GO TO FAVORITES</string>
-
-
-
-
 
     <!-- cartList strings -->
     <string name="title_my_cart">MY FAVORITES</string>

@@ -70,7 +70,7 @@ class ProductDetailsActivity : BaseActivity() , View.OnClickListener {
 
         GlideLoader(this).loadProductPicture(product.image,binding.ivProductDetailImage)
         binding.tvProductDetailsTitle.text = product.title
-        binding.tvProductDetailsPrice.text = product.price
+        binding.tvProductDetailsPrice.text = "Rs.${product.price}"
         binding.tvProductDetailsAvailableQuantity.text = product.stock_quantity
         binding.tvProductDetailsDescription.text = product.description
 
@@ -102,9 +102,11 @@ class ProductDetailsActivity : BaseActivity() , View.OnClickListener {
             mProductDetails.title,
             mProductDetails.price,
             mProductDetails.image,
+            mProductDetails.continent,
+            mProductDetails.country,
             Constants.DEFAULT_CARD_QUANTITY,
             mProductDetails.stock_quantity,
-            )
+        )
 
         showProgressDialog(getString(R.string.please_wait))
         FireStoreClass().addCartItems(this,addToCart)
