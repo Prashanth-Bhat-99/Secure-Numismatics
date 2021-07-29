@@ -52,6 +52,8 @@
     <string name="btn_lbl_logout">Logout</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="add_product">Add Coins</string>
+    <string name="currency">Currency Exchange</string>
+
 
     <!-- Add product activity -->
     <string name="title_add_product">ADD COIN</string>

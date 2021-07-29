@@ -21,4 +21,9 @@
         android:icon="@drawable/ic_vector_sold_products"
         android:title="@string/title_sold_products" />
 
+    <item
+        android:id="@+id/navigation_currency"
+        android:icon="@drawable/ic_currency"
+        android:title="@string/currency" />
+
 </menu>
