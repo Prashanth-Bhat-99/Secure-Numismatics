@@ -70,7 +70,9 @@ class ProductDetailsActivity : BaseActivity() , View.OnClickListener {
 
         GlideLoader(this).loadProductPicture(product.image,binding.ivProductDetailImage)
         binding.tvProductDetailsTitle.text = product.title
-        binding.tvProductDetailsPrice.text = "Rs.${product.price}"
+        binding.tvProductDetailsPrice.text = product.price
+        binding.tvContinentDescription.text = product.continent
+        binding.tvCountryDescription.text = product.country
         binding.tvProductDetailsAvailableQuantity.text = product.stock_quantity
         binding.tvProductDetailsDescription.text = product.description
 
