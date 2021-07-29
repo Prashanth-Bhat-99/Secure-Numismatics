@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "703435340004",
+    "project_id": "numismatics-8e1fe",
+    "storage_bucket": "numismatics-8e1fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:703435340004:android:de74cdaa889c7a06cdd4f1",
+        "android_client_info": {
+          "package_name": "com.thunder.apps.securenumismatics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "703435340004-apt9t4v6fn4nde7egq3guc4u9nauq9s5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thunder.apps.securenumismatics",
+            "certificate_hash": "ba2cfe1001f295b2a46b0c7903403875ce301587"
+          }
+        },
+        {
+          "client_id": "703435340004-hluhaqr6lvsb1l32pq3iqf4qi86je753.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDif9tNdvQPsaBxcXIgr3vTwS9i7fvJYCc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "703435340004-hluhaqr6lvsb1l32pq3iqf4qi86je753.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
