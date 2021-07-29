@@ -32,6 +32,6 @@
     <fragment
         android:id="@+id/navigation_currency"
         android:name="com.thunder.apps.securenumismatics.activities.ui.fragments.CurrencyFragment"
-        android:label="@string/currency"
+        android:label="@string/title_currency"
         tools:layout="@layout/fragment_currency" />
 </navigation>

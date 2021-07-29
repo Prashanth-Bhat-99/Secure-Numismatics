@@ -12,7 +12,7 @@ class CurrencyFragment : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        findViewById<Button1>(R.id.navigation_orders).setOnClickListener {
+        findViewById<Button1>(R.id.googleBtn).setOnClickListener {
             val openURL = Intent(Intent.ACTION_VIEW)
             openURL.data = Uri.parse("http://calc-currency.herokuapp.com")
             startActivity(openURL)
