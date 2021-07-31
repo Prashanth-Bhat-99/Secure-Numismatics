@@ -113,7 +113,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_country_label"
-                tools:text="This is the Coin's description." />
+                tools:text="Country Name." />
 
 
             <com.thunder.apps.securenumismatics.utils.MSPTextViewBold
@@ -129,7 +129,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_country_label" />
+                app:layout_constraintTop_toBottomOf="@id/tv_country_description" />
 
             <com.thunder.apps.securenumismatics.utils.MSPTextView
                 android:id="@+id/tv_continent_description"
@@ -143,7 +143,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_continent_label"
-                tools:text="This is the Coin's description." />
+                tools:text="Continent Name." />
 
 
             <com.thunder.apps.securenumismatics.utils.MSPTextViewBold

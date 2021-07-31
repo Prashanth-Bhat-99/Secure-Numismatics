@@ -69,6 +69,10 @@
     <string name="error_message_product_quantity">Please mention year</string>
     <string name="error_message_product_description">please_add_description</string>
     <string name="error_message_product_price">Please add Denomination</string>
+
+    <string name="error_message_country">Please mention Country</string>
+    <string name="error_message_continent">Please mention Continent</string>
+
     <string name="product_upload_success_message">Your Coin was uploaded successfully</string>
     <string name="no_products_added_yet">No Coins Added Yet!</string>
     <string name="no_dashboard_item_found">No Coin Found!</string>

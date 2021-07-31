@@ -117,6 +117,14 @@ class AddProductActivity : BaseActivity(), View.OnClickListener {
                 showErrorSnackBar(getString(R.string.error_message_product_price),true)
                 false
             }
+            TextUtils.isEmpty(binding.etCountry.text.toString().trim{ it <= ' '})->{
+                showErrorSnackBar(getString(R.string.error_message_country),true)
+                false
+            }
+            TextUtils.isEmpty(binding.etContinent.text.toString().trim{ it <= ' '})->{
+                showErrorSnackBar(getString(R.string.error_message_continent),true)
+                false
+            }
             TextUtils.isEmpty(binding.etProductDescription.text.toString().trim{ it <= ' '})->{
                 showErrorSnackBar(getString(R.string.error_message_product_description),true)
                 false

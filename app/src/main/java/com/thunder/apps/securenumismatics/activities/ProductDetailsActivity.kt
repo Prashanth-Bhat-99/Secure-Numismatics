@@ -71,8 +71,8 @@ class ProductDetailsActivity : BaseActivity() , View.OnClickListener {
         GlideLoader(this).loadProductPicture(product.image,binding.ivProductDetailImage)
         binding.tvProductDetailsTitle.text = product.title
         binding.tvProductDetailsPrice.text = product.price
-        binding.tvContinentDescription.text = product.continent
-        binding.tvCountryDescription.text = product.country
+        binding.tvCountryDescription.text = product.continent
+        binding.tvContinentDescription.text = product.country
         binding.tvProductDetailsAvailableQuantity.text = product.stock_quantity
         binding.tvProductDetailsDescription.text = product.description
 
@@ -137,7 +137,6 @@ class ProductDetailsActivity : BaseActivity() , View.OnClickListener {
     fun addToCartSuccess(){
         hideProgressDialog()
         Toast.makeText(this@ProductDetailsActivity, getString(R.string.success_message_item_added_in_cart), Toast.LENGTH_SHORT).show()
-
 
         binding.btnGoToCart.visibility = View.VISIBLE
         binding.btnAddToCart.visibility = View.GONE
