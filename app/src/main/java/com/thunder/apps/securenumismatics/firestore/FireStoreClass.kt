@@ -34,7 +34,6 @@ class FireStoreClass {
                 activity.hideProgressDialog()
                 Log.e(activity.javaClass.simpleName, exception.message.toString())
             }
-
     }
 
     fun getCurrentUserId(): String {
