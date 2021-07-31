@@ -104,8 +104,7 @@ class ProductDetailsActivity : BaseActivity() , View.OnClickListener {
             mProductDetails.title,
             mProductDetails.price,
             mProductDetails.image,
-            mProductDetails.continent,
-            mProductDetails.country,
+
             Constants.DEFAULT_CARD_QUANTITY,
             mProductDetails.stock_quantity,
         )

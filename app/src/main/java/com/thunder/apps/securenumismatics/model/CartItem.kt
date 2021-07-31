@@ -11,8 +11,8 @@ data class CartItem (
     val title : String = "",
     val price : String = "",
     val image : String = "",
-    val continent : String = "",
-    val country : String = "",
+
+
     var cart_quantity : String = "",
     var stock_quantity : String = "",
     var id : String = ""
