@@ -17,6 +17,7 @@ import com.thunder.apps.securenumismatics.firestore.FireStoreClass
 import com.thunder.apps.securenumismatics.model.Product
 import com.thunder.apps.securenumismatics.utils.Constants
 
+
 class DashboardFragment : BaseFragment() {
 
 //    private lateinit var dashboardViewModel: DashboardViewModel
@@ -29,7 +30,6 @@ class DashboardFragment : BaseFragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
-
     }
 
     override fun onCreateView(
@@ -55,8 +55,6 @@ class DashboardFragment : BaseFragment() {
         inflater.inflate(R.menu.menu_dashboard,menu)
         super.onCreateOptionsMenu(menu, inflater)
     }
-
-
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
