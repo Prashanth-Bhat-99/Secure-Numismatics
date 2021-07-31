@@ -33,6 +33,8 @@
 
     </androidx.appcompat.widget.Toolbar>
 
+
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_cart_items_list"
         android:layout_width="0dp"
@@ -73,100 +75,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:visibility="visible">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <com.thunder.apps.securenumismatics.utils.MSPTextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/lbl_subtotal"
-                android:textColor="@color/colorDarkGrey"
-                android:textSize="@dimen/checkout_label_value_textSize" />
-
-            <com.thunder.apps.securenumismatics.utils.MSPTextView
-                android:id="@+id/tv_sub_total"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:textColor="@color/colorSecondaryText"
-                android:textSize="@dimen/checkout_label_value_textSize"
-                tools:text="$100"
-                android:gravity="center_horizontal" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <com.thunder.apps.securenumismatics.utils.MSPTextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/lbl_shipping_charge"
-                android:textColor="@color/colorDarkGrey"
-                android:textSize="@dimen/checkout_label_value_textSize" />
-
-            <com.thunder.apps.securenumismatics.utils.MSPTextView
-                android:id="@+id/tv_shipping_charge"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:textColor="@color/colorSecondaryText"
-                android:textSize="@dimen/checkout_label_value_textSize"
-                tools:text="$10"
-                android:gravity="center_horizontal" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <com.thunder.apps.securenumismatics.utils.MSPTextViewBold
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/lbl_total_amount"
-                android:textColor="@color/colorDarkGrey"
-                android:textSize="@dimen/checkout_label_value_textSize" />
-
-            <com.thunder.apps.securenumismatics.utils.MSPTextViewBold
-                android:id="@+id/tv_total_amount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:textColor="@color/colorDarkGrey"
-                android:textSize="@dimen/checkout_label_value_textSize"
-                tools:text="$110"
-                android:gravity="center_horizontal" />
-        </LinearLayout>
-
-        <com.thunder.apps.securenumismatics.utils.MSPButton
-            android:id="@+id/btn_checkout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/button_background"
-            android:foreground="?attr/selectableItemBackground"
-            android:gravity="center"
-            android:paddingTop="@dimen/btn_padding"
-            android:paddingBottom="@dimen/btn_padding"
-            android:text="@string/btn_lbl_checkout"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/btn_textSize"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ll_terms_and_condition"
-            tools:ignore="UnusedAttribute" />
-
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+

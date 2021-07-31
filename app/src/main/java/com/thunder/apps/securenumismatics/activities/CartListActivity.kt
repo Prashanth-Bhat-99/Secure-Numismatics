@@ -27,11 +27,11 @@ class CartListActivity : BaseActivity() {
 
         setUpActionBar()
 
-        binding.btnCheckout.setOnClickListener{
-            val intent = Intent(this@CartListActivity,AddressListActivity::class.java)
-            intent.putExtra(Constants.EXTRA_SELECT_ADDRESS,true)
-            startActivity(intent)
-        }
+//        binding.btnCheckout.setOnClickListener{
+//            val intent = Intent(this@CartListActivity,AddressListActivity::class.java)
+//            intent.putExtra(Constants.EXTRA_SELECT_ADDRESS,true)
+//            startActivity(intent)
+//        }
     }
     private fun setUpActionBar(){
 
@@ -118,17 +118,17 @@ class CartListActivity : BaseActivity() {
                     subTotal += (price * quantity)
                 }
             }
-            binding.tvSubTotal.text = "Rs.${subTotal}"
-            //Change the logic accordingly
-            binding.tvShippingCharge.text = "Rs.${100}"
+//            binding.tvSubTotal.text = "Rs.${subTotal}"
+//            //Change the logic accordingly
+//            binding.tvShippingCharge.text = "Rs.${100}"
 
-            if (subTotal >0 ){
+            if (subTotal >0 ) {
                 binding.llCheckout.visibility = View.VISIBLE
 
                 val total = subTotal + 100
 
-                binding.tvTotalAmount.text = "Rs.${total}"
-            }else{
+//                binding.tvTotalAmount.text = "Rs.${total}"
+            }else {
                 binding.llCheckout.visibility = View.GONE
             }
         }else{

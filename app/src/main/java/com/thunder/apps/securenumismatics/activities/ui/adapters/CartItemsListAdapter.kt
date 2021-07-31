@@ -34,11 +34,11 @@ class CartItemsListAdapter(
         GlideLoader(context).loadProductPicture(model.image, holder.binding.ivCartItemImage)
         holder.binding.tvCartItemTitle.text = model.title
         holder.binding.tvCartItemPrice.text = "Rs.${model.price}"
-        holder.binding.tvCartQuantity.text = model.cart_quantity
+//        holder.binding.tvCartQuantity.text = model.cart_quantity
 
         if (model.cart_quantity == "0") {
-            holder.binding.ibAddCartItem.visibility = View.GONE
-            holder.binding.ibRemoveCartItem.visibility = View.GONE
+//            holder.binding.ibAddCartItem.visibility = View.GONE
+//            holder.binding.ibRemoveCartItem.visibility = View.GONE
 
             if (updateCartItems){
                 holder.binding.ibDeleteCartItem.visibility = View.VISIBLE
@@ -46,31 +46,31 @@ class CartItemsListAdapter(
                 holder.binding.ibDeleteCartItem.visibility = View.GONE
             }
 
-            holder.binding.tvCartQuantity.text =
-                context.resources.getString(R.string.lbl_text_out_of_stock)
+//            holder.binding.tvCartQuantity.text =
+//                context.resources.getString(R.string.lbl_text_out_of_stock)
 
-            holder.binding.tvCartQuantity.setTextColor(
-                ContextCompat.getColor(
-                    context,
-                    R.color.colorSnackBarError
-                )
-            )
+//            holder.binding.tvCartQuantity.setTextColor(
+//                ContextCompat.getColor(
+//                    context,
+//                    R.color.colorSnackBarError
+//                )
+//            )
         } else {
 
             if (updateCartItems){
                 holder.binding.ibDeleteCartItem.visibility = View.VISIBLE
-                holder.binding.ibAddCartItem.visibility = View.VISIBLE
-                holder.binding.ibRemoveCartItem.visibility = View.VISIBLE
+//                holder.binding.ibAddCartItem.visibility = View.VISIBLE
+//                holder.binding.ibRemoveCartItem.visibility = View.VISIBLE
             }else{
                 holder.binding.ibDeleteCartItem.visibility = View.GONE
-                holder.binding.ibAddCartItem.visibility = View.GONE
-                holder.binding.ibRemoveCartItem.visibility = View.GONE
+//                holder.binding.ibAddCartItem.visibility = View.GONE
+//                holder.binding.ibRemoveCartItem.visibility = View.GONE
             }
 
 
-            holder.binding.tvCartQuantity.setTextColor(
-                ContextCompat.getColor(context, R.color.colorSecondaryText)
-            )
+//            holder.binding.tvCartQuantity.setTextColor(
+//                ContextCompat.getColor(context, R.color.colorSecondaryText)
+//            )
         }
 
         holder.binding.ibDeleteCartItem.setOnClickListener {
@@ -79,44 +79,44 @@ class CartItemsListAdapter(
                 FireStoreClass().removeItemFromCart(context, model.id)
             }
         }
-        holder.binding.ibRemoveCartItem.setOnClickListener {
-            if (model.cart_quantity == "1") {
-                FireStoreClass().removeItemFromCart(context, model.id)
-            } else {
-                val cartQuantity: Int = model.cart_quantity.toInt()
-
-                val hashMap = HashMap<String, Any>()
-
-                hashMap[Constants.CART_QUANTITY] = (cartQuantity - 1).toString()
-                if (context is CartListActivity) {
-                    context.showProgressDialog(context.getString(R.string.please_wait))
-                }
-
-                FireStoreClass().updateMyCart(context, model.id, hashMap)
-            }
-
-        }
-        holder.binding.ibAddCartItem.setOnClickListener {
-            val cartQuantity: Int = model.cart_quantity.toInt()
-
-            if (cartQuantity < model.stock_quantity.toInt()) {
-                val hashMap = HashMap<String, Any>()
-
-                hashMap[Constants.CART_QUANTITY] = (cartQuantity + 1).toString()
-                if (context is CartListActivity) {
-                    context.showProgressDialog(context.getString(R.string.please_wait))
-                }
-
-                FireStoreClass().updateMyCart(context, model.id, hashMap)
-            } else {
-                if (context is CartListActivity) {
-                    context.showErrorSnackBar(
-                        "Available stock is ${model.stock_quantity.toInt()}. You cannot add more than stock quantity.",
-                        true
-                    )
-                }
-            }
-        }
+//        holder.binding.ibRemoveCartItem.setOnClickListener {
+//            if (model.cart_quantity == "1") {
+//                FireStoreClass().removeItemFromCart(context, model.id)
+//            } else {
+//                val cartQuantity: Int = model.cart_quantity.toInt()
+//
+//                val hashMap = HashMap<String, Any>()
+//
+//                hashMap[Constants.CART_QUANTITY] = (cartQuantity - 1).toString()
+//                if (context is CartListActivity) {
+//                    context.showProgressDialog(context.getString(R.string.please_wait))
+//                }
+//
+//                FireStoreClass().updateMyCart(context, model.id, hashMap)
+//            }
+//
+//        }
+//        holder.binding.ibAddCartItem.setOnClickListener {
+//            val cartQuantity: Int = model.cart_quantity.toInt()
+//
+//            if (cartQuantity < model.stock_quantity.toInt()) {
+//                val hashMap = HashMap<String, Any>()
+//
+//                hashMap[Constants.CART_QUANTITY] = (cartQuantity + 1).toString()
+//                if (context is CartListActivity) {
+//                    context.showProgressDialog(context.getString(R.string.please_wait))
+//                }
+//
+//                FireStoreClass().updateMyCart(context, model.id, hashMap)
+//            } else {
+//                if (context is CartListActivity) {
+//                    context.showErrorSnackBar(
+//                        "Available stock is ${model.stock_quantity.toInt()}. You cannot add more than stock quantity.",
+//                        true
+//                    )
+//                }
+//            }
+//        }
 //        holder.itemView.setOnClickListener{
 //            if (context is CartListActivity){
 //                val intent = Intent(context,ProductDetailsActivity::class.java)
