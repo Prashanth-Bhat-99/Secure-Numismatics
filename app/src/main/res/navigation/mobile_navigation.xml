@@ -29,9 +29,9 @@
 <!--        android:label="@string/title_sold_products"-->
 <!--        tools:layout="@layout/fragment_sold_products" />-->
 
-    <fragment
-        android:id="@+id/navigation_currency"
-        android:name="com.thunder.apps.securenumismatics.activities.ui.fragments.CurrencyFragment"
-        android:label="@string/title_currency"
-        tools:layout="@layout/fragment_currency" />
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_currency"-->
+<!--        android:name="com.thunder.apps.securenumismatics.activities.ui.fragments.CurrencyFragment"-->
+<!--        android:label="@string/title_currency"-->
+<!--        tools:layout="@layout/fragment_currency" />-->
 </navigation>

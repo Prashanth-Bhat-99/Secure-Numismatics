@@ -30,7 +30,7 @@ class DashboardItemsListAdapter (
 
         GlideLoader(context).loadProductPicture(model.image,holder.binding.ivDashboardItemImage)
         holder.binding.tvDashboardItemTitle.text = model.title
-        holder.binding.tvDashboardItemPrice.text = "Rs. ${model.price}"
+        holder.binding.tvDashboardItemPrice.text = model.price
 
         holder.itemView.setOnClickListener{
             if (onClickListener != null){

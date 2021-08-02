@@ -16,6 +16,8 @@ import com.thunder.apps.securenumismatics.databinding.FragmentDashboardBinding
 import com.thunder.apps.securenumismatics.firestore.FireStoreClass
 import com.thunder.apps.securenumismatics.model.Product
 import com.thunder.apps.securenumismatics.utils.Constants
+import java.util.*
+import kotlin.collections.ArrayList
 
 
 class DashboardFragment : BaseFragment() {
@@ -82,6 +84,8 @@ class DashboardFragment : BaseFragment() {
     fun successDashboardItemList(dashboardItemsList : ArrayList<Product>){
         binding.shimmerViewContainer.visibility = View.GONE
         binding.shimmerViewContainer.stopShimmerAnimation()
+        Log.i("DashboardItemsList", dashboardItemsList.toString())
+
 //        hideProgressDialog()
 
 //        for(i in dashboardItemsList){

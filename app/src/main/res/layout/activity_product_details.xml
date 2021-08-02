@@ -122,7 +122,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/product_details_label_margin"
                 android:layout_marginTop="12dp"
-                android:paddingTop="50px"
+                android:paddingTop="16px"
                 android:text="@string/lbl_continent"
                 android:textColor="@color/white"
                 android:textSize="@dimen/product_details_label_textSize"
